@@ -76,7 +76,7 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
   
   holiday_hash.select do |season, holiday_and_supplies|
-    holiday_and_supplies == "BBQ"
+    holiday_and_supplies.to_s == "BBQ"
   end
 end
 
